@@ -55,7 +55,7 @@ sub   4096R/F273FCD8 2017-02-22
 
 * docker run --name some-wordpress --link db -p 80:80 -d wordpress
 
-# 4.connectwordpres
+# 4.connect wordpres
 ```bash
 MYSQL_USER=root
 MYSQL_ROOT_PASSWORD=pass
