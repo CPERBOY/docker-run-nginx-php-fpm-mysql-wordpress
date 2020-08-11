@@ -36,4 +36,32 @@ sub   4096R/F273FCD8 2017-02-22
    
 ติดตั้ง Docker
 
+อัพเดท apt แพคเกจ
+
+* apt-get update
+
+ติดตั้ง docker-ce
+
+* apt-get install docker-ce
+
+ตรวจสอบ docker version
+
+* docker version
+
+# 2.สร้างกล่องของ mysql
+
+* docker run -it -d --name db -e MYSQL_ROOT_PASSWORD=pass -e MYSQL_USER=root -e MYSQL_DATABASE=wordpress   mysql:5.7
+# 3. run wordpres
+
+* docker run --name some-wordpress --link db -p 80:80 -d wordpress
+
+# 4.connectwordpres
+```bash
+MYSQL_USER=root
+MYSQL_ROOT_PASSWORD=pass
+MYSQL_DATABASE=wordpress
+MYSQL_database host =db
+
+
+
 
